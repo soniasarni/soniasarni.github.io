@@ -1,0 +1,341 @@
+body{
+	background-image:url(images/image.jpg);
+	justify-content: space-between;
+	font-family:'arial', sans-serif;
+	margin:0px;
+	padding:0px;
+	position: relative;
+	height: 100vh;
+}
+.first{
+	display: flex;
+	font-weight: bold;
+	background: #086A87;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	color: black;
+	list-style-type : none;
+}
+.first h1{
+	color: black;
+	float: left;
+	margin: 10px;
+	padding: 20px;
+}
+.first img{
+	width: 140px;
+    border-radius: 50%;
+    float: right;
+}
+nav li{
+	padding: 15px;
+	margin: 10px;
+}
+nav li a {
+	border-radius: 10%;
+	color:black;
+	list-style-type: none;
+	text-decoration: none;
+	font-weight: bold;
+	background:#086A87;
+	cursor: pointer;
+}
+nav li a:hover{
+	background: #1AACD2;
+}
+.competances img{
+   width:15px;
+}
+.competances{ 
+	background: #086A87; 
+	width: 90%;
+	margin: auto;
+	border:2px solid #21A1AF ;
+
+}
+.competances li{
+	font-weight: bold;
+	margin: 20px;
+}
+.competances h3{
+	text-decoration: underline;
+	font-weight: bold;
+}
+.differntes_competances{
+	padding: 20px;
+	margin: auto;
+	margin-top: 10px;
+}
+h2 {
+	text-decoration: underline  #2FD6E9 ;
+	text-align: center;
+	color:  #2FD6E9  ;
+	animation-duration: 5s;
+    animation-name: glissement;
+    animation-iteration-count: 6S;
+}
+@keyframes glissement {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.experience li{
+    text-decoration-style:none;
+}
+.experience{
+	background: #086A87; 
+	width: 90%;
+	margin: auto;
+	font-family:calibri, serif;
+	border-radius: 2%;
+	padding: 10px;
+	margin-top:50px;
+	border:2px solid #21A1AF ;
+}
+.formation {
+	background: #086A87 ;
+	width: 90%;
+    margin: auto;
+    border:2px solid #21A1AF ;
+}
+.active a{
+	background: #21A1AF !important;
+	opacity: O.4;
+	border:1px solid #2FD6E9;
+	box-shadow: 5px 5px 5px #2FD6E9 ; 
+}
+footer{
+    background: #086A87;
+    display: flex;
+	font-weight: bold;
+	width: 100%;
+	margin: auto;
+	color: black;
+	list-style-type : none;
+    padding: 60px;
+    margin-top: 1412px;
+    }
+footer div{
+	display: inline-block;
+	margin: auto;
+    padding: 20px;
+    width: 215px;
+}
+#tel {
+	width:50px;
+}
+#email{
+	width:60px;
+	border-radius: 50%;
+}
+#git{
+	width:60px;
+	border-radius: 50%;	
+}
+.icone{
+	width:60px;
+    border-radius: 50%;	
+}
+button{
+     border-radius: 50%!important;	
+	}
+@media only screen and(min-device-width:300px) and (max-device-width:530px){
+
+       body{
+		width:100%;
+		background: salmon; 
+	
+    }
+}
+.icone{
+	 width:40px;
+	 border-radius: 50%;
+	 animation: 3s linear 1s infinite alternate slidein;
+}
+ @keyframes linear{
+    animation: 3s linear 1s slidein;
+}
+.icone{
+	padding: 5px;
+}
+.box{
+	padding: 60px;
+	margin-top: 100px;
+	background: #0B4A56;
+    border-radius: 10%;
+}
+.clickAnim{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: linear-gradient(to top,#0B6A76 ,#67DFEE);
+	position: absolute;
+	z-index: 10;
+	transform: scale(0);
+	transform-origin: center;
+    animation: clickAnim 1s ease-in-out;
+}
+@keyframes clickAnim{
+  0%{
+	transform: scale(0);
+   }	
+50%{
+	transform: scale(2);
+	opacity: 1;
+	}
+0%{
+		transform: scale(0);
+		opacity: 0;
+	}
+}
+fieldset {
+	background: #E4F0F5;
+	height: 600px;
+}
+fieldset .form div{
+	padding: 20px;
+	margin: auto;
+}
+ dl{
+ 	background: #0A6B84;
+    height: 40px;
+    margin:auto;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    float: right;
+}
+dt{
+	height: 40px;
+	color: #2FD6E9;
+	cursor:pointer;
+    margin: auto;
+}
+dt:hover{
+	background: #17DCF2;
+	color:#056785;
+}
+dd{
+	margin:0;
+    padding: 0;
+    margin: auto;
+}
+dd ul{
+	list-style-type: none;
+	margin: 0;padding: 0;
+}
+dd ul li{
+	color:#07FAED;	
+	text-decoration: none;
+	height: 30px;
+	border-top: dotted 1px pink;
+}
+dl dd{
+	display:none;
+}
+dl:hover dd{
+    display: block;
+}
+.text{
+	display: none;
+}
+.text.is-visible{
+	display: block;
+}
+div .icone{
+	 position: relative;
+	 -o-animation-name:mouve;
+	 -o-animation-duration: 2s;
+     -o-animation-timing-function: ease;
+     -o-animation-delay: 4s;
+     -o-animation-iteration-count:2.5;
+     -o-animation-direction:alternate;
+
+     -moz-animation-name:mouve;
+	 -moz-animation-duration: 2s;
+     -moz-animation-timing-function: ease;
+     -moz-animation-delay: 4s;
+     -moz-animation-iteration-count:2.5;
+     -moz-animation-direction:alternate;
+
+     -webkit-animation-name:mouve;
+	 -webkit-animation-duration: 2s;
+     -webkit-animation-timing-function: ease;
+     -webkit-animation-delay: 4s;
+     -webkit-animation-iteration-count:2.5;
+     -webkit-animation-direction:alternate;
+
+     animation-name:mouve;
+	 animation-duration: 2s;
+     animation-timing-function: ease;
+     animation-delay: 4s;
+     animation-iteration-count:2.5;
+     animation-direction:alternate;
+   }
+@keyframes mouve{
+	0%{position:top:0px; left:0px;}
+	25%{position:top:0px; left:300px;}
+	50%{position:top:200px; left:300px;}
+	75%{position:top:200px; left:0px;}
+    0%{top:0px; left:0px;}
+} 	
+.container .icone{
+	width:40px;
+	 border-radius: 50%;
+}
+.container{
+	padding: 200px;
+	margin:
+}
+.clickAnim{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: linear-gradient(to top,#0B6A76 ,#67DFEE);
+	position: absolute;
+	z-index: 9000;
+	transform: scale(0);
+	transform-origin: center;
+    animation: clickAnim 1s ease-in-out;
+}
+@keyframes clickAnim{
+0%{
+	transform: scale(0);
+}	
+50%{
+	transform: scale(2);
+	opacity: 1;
+	}0%{
+		transform: scale(0);
+		opacity: 0;
+      }
+}
+.mytitle{
+	font-size: 100px;
+	text-align: center;
+	margin-top: 10px;
+	font-family: 'poppins',sans-serif;
+	color:  #2FD6E9;
+	}
+.splitting .char{  
+  animation: slide-in 1s cubic-bezier(.5, 0, .5, 1) both;
+  animation-delay: calc(60ms * var(--char-index));
+  opacity: 1;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-1em) rotate(-.5turn) scale(0.5);
+    opacity: 0;
+  }
+}
+.style_anim {
+	margin-top: 90px;
+}
